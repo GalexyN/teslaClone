@@ -7,7 +7,7 @@ import CarItem from '../CarItem';
 const CarsList = () => {
 
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList
         data={cars}
         renderItem={({ item }) => <CarItem car={item} />}
