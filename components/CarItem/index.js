@@ -3,7 +3,9 @@ import { View, Text, ImageBackground } from 'react-native';
 import StyledButton from '../StyledButton/index';
 import styles from './styles';
 
-const CarItem = ({ name, subtitle, image, taglineCTA }) => {
+const CarItem = (props) => {
+
+  const { name, subtitle, image, taglineCTA } = props.car;
   return (
     <View style={styles.carContainer}>
       <ImageBackground source={image} style={styles.image} />
